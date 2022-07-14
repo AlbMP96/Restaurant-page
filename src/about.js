@@ -1,6 +1,7 @@
 function about() {
     const about = document.createElement('div');
-    about.setAttribute('id', 'about');
+    about.setAttribute('id', 'About');
+    about.style.display = 'none';
 
     const title = document.createElement('h1');
     title.textContent = 'ABOUT US';

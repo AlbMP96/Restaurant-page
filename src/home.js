@@ -2,7 +2,8 @@ import Icon from './assets/cowabunga.png';
 
 function home() {
     const home = document.createElement('div');
-    home.setAttribute('id', 'home');
+    home.setAttribute('id', 'Home');
+    home.style.display = 'flex';
 
     const hero = document.createElement('div');
     hero.setAttribute('id', 'hero');

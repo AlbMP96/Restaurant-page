@@ -5,7 +5,8 @@ import Extravaganzza from './assets/Extravaganzza.png';
 
 function menu() {
     const menu = document.createElement('div');
-    menu.setAttribute('id', 'menu');
+    menu.setAttribute('id', 'Menu');
+    menu.style.display = 'none';
 
     const imgs = [{
             name: 'BBQ',

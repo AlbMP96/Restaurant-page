@@ -1,12 +1,7 @@
-#about {
-    display: none;
-    flex: 1;
+@use 'variables';
 
-    flex-direction: column;
-    align-items:center;
-    justify-content:center;
-    
-    background-color: rgba(0, 0, 0, 0.5);
+#About {
+    @include variables.body;
     color: white;
 
     #story {
