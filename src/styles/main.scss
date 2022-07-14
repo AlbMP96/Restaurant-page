@@ -1,0 +1,17 @@
+body {
+    margin: 0;
+    text-align: center;
+
+    #content {
+        background-image: url('../assets/Pizza-restaurant.jpg');
+        background-size: cover;
+        background-attachment: fixed;
+        height: 100vh;
+        display: flex;
+        flex-direction: column;
+    }
+
+}
+
+@import './header';
+@import './home';
