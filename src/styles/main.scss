@@ -4,6 +4,7 @@ body {
 
     #content {
         background-image: url('../assets/Pizza-restaurant.jpg');
+        background-color: rgb(0, 128, 0, 0.2);
         background-size: cover;
         background-attachment: fixed;
         height: 100vh;
@@ -15,3 +16,4 @@ body {
 
 @import './header';
 @import './home';
+@import './about';

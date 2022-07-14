@@ -2,6 +2,7 @@ import './styles/main.scss';
 
 import {home} from './home';
 import {header} from './header';
+import {about} from './about';
 
 
 function main() {
@@ -11,6 +12,8 @@ function main() {
     element.appendChild(header());
 
     element.appendChild(home());
+
+    element.appendChild(about());
 
     return element;
 }

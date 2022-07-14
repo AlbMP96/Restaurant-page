@@ -13,6 +13,11 @@ function header () {
     home.className = 'tab';
     home.textContent = 'Home';
 
+    home.addEventListener('click', () => {
+        document.querySelector('#home').style.display = 'flex';
+        document.querySelector('#about').style.display = 'none';
+    })
+
     nav.appendChild(home);
 
     const menu = document.createElement('button');
@@ -21,11 +26,16 @@ function header () {
 
     nav.appendChild(menu);
 
-    const contact = document.createElement('button');
-    contact.className = 'tab';
-    contact.textContent = 'Contact';
+    const about = document.createElement('button');
+    about.className = 'tab';
+    about.textContent = 'About';
 
-    nav.appendChild(contact);
+    about.addEventListener('click', () => {
+        document.querySelector('#home').style.display = 'none';
+        document.querySelector('#about').style.display = 'flex';
+    })
+
+    nav.appendChild(about);
 
     header.appendChild(nav);
 
