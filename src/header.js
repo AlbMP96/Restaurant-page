@@ -1,4 +1,4 @@
-function header () {
+function header() {
     const header = document.createElement('header');
 
     const title = document.createElement('h1');
@@ -15,14 +15,21 @@ function header () {
 
     home.addEventListener('click', () => {
         document.querySelector('#home').style.display = 'flex';
+        document.querySelector('#menu').style.display = 'none';
         document.querySelector('#about').style.display = 'none';
-    })
+    });
 
     nav.appendChild(home);
 
     const menu = document.createElement('button');
     menu.className = 'tab';
     menu.textContent = 'Menu';
+
+    menu.addEventListener('click', () => {
+        document.querySelector('#home').style.display = 'none';
+        document.querySelector('#menu').style.display = 'grid';
+        document.querySelector('#about').style.display = 'none';
+    });
 
     nav.appendChild(menu);
 
@@ -32,8 +39,9 @@ function header () {
 
     about.addEventListener('click', () => {
         document.querySelector('#home').style.display = 'none';
+        document.querySelector('#menu').style.display = 'none';
         document.querySelector('#about').style.display = 'flex';
-    })
+    });
 
     nav.appendChild(about);
 

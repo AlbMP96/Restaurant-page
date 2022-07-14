@@ -1,13 +1,21 @@
+@import url('https://fonts.googleapis.com/css2?family=Merienda&display=swap');
+
 body {
+    background-image: url('../assets/Pizza-restaurant.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-repeat: no-repeat;
     margin: 0;
+
+    font-family: 'Merienda', cursive;
     text-align: center;
 
+    user-select: none;
+
     #content {
-        background-image: url('../assets/Pizza-restaurant.jpg');
-        background-color: rgb(0, 128, 0, 0.2);
-        background-size: cover;
-        background-attachment: fixed;
         min-height: 100vh;
+        min-width: 100vw;
+
         display: flex;
         flex-direction: column;
     }
@@ -17,3 +25,4 @@ body {
 @import './header';
 @import './home';
 @import './about';
+@import './menu';

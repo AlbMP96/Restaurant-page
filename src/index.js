@@ -3,6 +3,7 @@ import './styles/main.scss';
 import {home} from './home';
 import {header} from './header';
 import {about} from './about';
+import {menu} from './menu';
 
 
 function main() {
@@ -14,6 +15,8 @@ function main() {
     element.appendChild(home());
 
     element.appendChild(about());
+
+    element.appendChild(menu());
 
     return element;
 }
