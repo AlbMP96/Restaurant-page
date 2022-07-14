@@ -18,7 +18,8 @@ header {
             border: 2px solid transparent;
             box-sizing: border-box;
 
-            &:hover {
+            
+            &:first-child {
                 border-bottom: 2px solid black;
             }
         }
